@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags para sa responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ACT5 </title>
+    
+    <!-- Bootstrap 5 CSS - yung styling framework na ginamit natin -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS - yung sarili nating styles na idadagdag -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR SECTION - yung navigation bar sa taas -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-violet-pink shadow-sm">
+        <div class="container">
+            <!-- Brand logo/name - yung pangalan ng website sa navbar -->
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="logo-icon">👨🏻‍💻</span> LEYY
+            </a>
+            
+            <!-- Hamburger button for mobile - lalabas lang 'to sa mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation links - yung mga menu items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION - yung main banner area -->
+    <section class="d-flex justify-content-center align-items-center hero-section">
+        <div class="text-center">
+            <!-- Main heading - yung malaking text -->
+            <h1 class="display-4 fw-bold mb-4">Welcome Mga Boss</h1>
+            
+            <!-- Subheading - yung supporting text -->
+            <p class="lead mb-4">BSIT STUDENT</p>
+            
+            <!-- CTA Button - yung button na may alert pag clinick -->
+            <button class="btn btn-cute-pink btn-lg" id="ctaButton">Click Mo To!</button>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION - yung 3 columns na features -->
+    <section class="py-5" id="features">
+        <div class="container">
+            <!-- Section title -->
+            <h2 class="text-center mb-5">My Features</h2>
+            
+            <!-- Row para sa 3 columns - magiging stack sa mobile -->
+            <div class="row g-4">
+                <!-- FIRST COLUMN/CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <!-- Card image - random flower image from unsplash -->
+                        <img src="Screenshot (74).png" class="card-img-top" alt="myportfolio3">
+                        
+                        <!-- Card body - yung laman ng card -->
+                        <div class="card-body">
+                            <h3 class="card-title">My final portfolio</h3>
+                            <p class="card-text">i make this portfolio because its my final project in ws101 so i make my portfolio very responsive and cute animation with nice bg and nice annimation effects, then it can use with other devices it auto adjust .</p>
+                        </div>
+                        
+                        <!-- Card footer - yung button sa baba -->
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-cute-purple w-100">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SECOND COLUMN/CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="Screenshot (157).png" class="card-img-top" alt="act4">
+                        <div class="card-body">
+                            <h3 class="card-title">MY ACT 4</h3>
+                            <p class="card-text">So i make this shop as a activity 4 on ws101 so i put a functional butttons and i add some simple math operation that compute the amount of i order then i make it nice and cute hehehe </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-cute-purple w-100">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- THIRD COLUMN/CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="Screenshot (160).png" class="card-img-top" alt="act2">
+                        <div class="card-body">
+                            <h3 class="card-title">login</h3>
+                            <p class="card-text">so here i make a simple login page its my/our class activity 2 i make this a nice bg and functional buttons</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-cute-purple w-100">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOTSTRAP JS - kailangan 'to para gumana yung navbar toggle sa mobile -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- CUSTOM JS - yung sarili nating javascript functions -->
+    <script src="script.js"></script>
+</body>
+</html>

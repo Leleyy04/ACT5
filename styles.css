@@ -1,0 +1,154 @@
+/* 
+ * CUSTOM COLOR VARIABLES
+ * Dito natin nilagay yung violet-pink color scheme
+ */
+ :root {
+    --violet-pink: #e0a1e0;        /* Main violet-pink color */
+    --light-violet-pink: #f5d6f5;  /* Light version for backgrounds */
+    --dark-violet-pink: #c471c4;   /* Dark version for hover effects */
+    --cute-pink: #ffb6e6;          /* Cute pink for buttons */
+    --cute-purple: #d9a3ff;        /* Cute purple for secondary buttons */
+}
+
+/* BACKGROUND COLORS - mga custom bg colors */
+.bg-violet-pink {
+    background-color: var(--violet-pink) !important;  /* Ginamit sa navbar */
+}
+
+.bg-light-violet-pink {
+    background-color: var(--light-violet-pink) !important;  /* Ginamit sa hero section */
+}
+
+/* TEXT COLORS - pwede rin gamitin sa text */
+.text-violet-pink {
+    color: var(--violet-pink) !important;
+}
+
+/* 
+ * BUTTON STYLES
+ * Dito ginawa yung cute buttons na may hover effects
+ */
+.btn-cute-pink {
+    background-color: var(--cute-pink);
+    border-color: var(--cute-pink);
+    color: white;
+    border-radius: 50px;           /* Rounded corners */
+    padding: 10px 25px;
+    transition: all 0.3s;          /* Para smooth yung hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Simple shadow */
+}
+
+.btn-cute-pink:hover {
+    background-color: #ff9ad9;      /* Slightly darker on hover */
+    border-color: #ff9ad9;
+    transform: translateY(-2px);    /* Gumagalaw pataas konti */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Mas malaking shadow */
+    color: white;
+}
+
+/* Purple version ng button */
+.btn-cute-purple {
+    background-color: var(--cute-purple);
+    border-color: var(--cute-purple);
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-cute-purple:hover {
+    background-color: #cc8aff;
+    border-color: #cc8aff;
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* 
+ * NAVBAR STYLES
+ * Custom design para sa navigation bar
+ */
+.navbar {
+    padding: 15px 0;  /* Spacing sa taas at baba */
+}
+
+.logo-icon {
+    margin-right: 10px;  /* Space between icon and text */
+    font-size: 1.5rem;  /* Laki ng flower emoji */
+}
+
+.nav-link {
+    margin: 0 10px;     /* Space between nav items */
+    font-weight: 500;   /* Medium font weight */
+}
+
+/* Special style para sa nav links */
+.btn-nav {
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 50px;  /* Rounded corners */
+    transition: all 0.3s;  /* Smooth hover effect */
+}
+
+.btn-nav:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Light white background */
+}
+
+/* Underline animation effect */
+.btn-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.btn-nav:hover::after {
+    width: 70%;  /* Lumalabas yung underline pag hover */
+}
+
+/* 
+ * HERO SECTION
+ * Yung main banner area sa taas
+ */
+.hero-section {
+    min-height: 400px;  /* Minimum height kahit walang laman */
+    background-color: var(--light-violet-pink);
+    background-image: radial-gradient(circle, var(--light-violet-pink), var(--violet-pink));  /* Gradient effect */
+}
+
+/* 
+ * CARD STYLES
+ * Design para sa mga cards sa features section
+ */
+.card {
+    transition: transform 0.3s;  /* Para sa hover effect */
+    border-radius: 15px !important;  /* Rounded corners */
+    overflow: hidden;  /* Para hindi lumabas yung image sa corners */
+}
+
+.card:hover {
+    transform: translateY(-10px);  /* Gumagalaw pataas pag hover */
+}
+
+.card-img-top {
+    height: 200px;      /* Fixed height para pantay-pantay */
+    object-fit: cover;  /* Para hindi stretched yung images */
+}
+
+/* 
+ * RESPONSIVE ADJUSTMENTS
+ * Mga special styles para sa mobile devices
+ */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 300px;  /* Mas maliit na height sa mobile */
+        padding: 40px 0;    /* Add padding */
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;  /* Smaller font size sa mobile */
+    }
+}
